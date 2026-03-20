@@ -1,57 +1,20 @@
-# Lab M7.05 - Creating Budgets and Cost Alerts
+# Lab M7.05 - Creating Budgets and Alerts
 
-**Repository:** [https://github.com/cloud-engineering-bootcamp/ce-lab-creating-budgets-alerts](https://github.com/cloud-engineering-bootcamp/ce-lab-creating-budgets-alerts)
+## What I Did
+- Created an SNS topic and confirmed email subscription for budget alerts
+- Set up a monthly $50 cost budget with 50%, 80%, and 100% threshold alerts
+- Created a service-specific EC2 budget ($30) and a tag-based dev environment budget ($25)
+- Configured an automated budget action that applies an IAM deny policy at 100%
+- Documented the full budget configuration in a dashboard reference
 
-**Activity Type:** Individual  
-**Estimated Time:** 45-60 minutes
+## Key Findings
+- Multi-threshold alerts provide early warning at different spend levels
+- Tag-based budgets require cost allocation tags to be activated in Billing
+- Automated actions add enforcement beyond simple email notifications
+- Budget configurations should be version-controlled with Terraform
 
-## Learning Objectives
-
-Based on Module 7 Day 3 lessons
-
-## Prerequisites
-
-- [ ] AWS account with appropriate permissions
-- [ ] Completed Module 7 lessons through Day 3
-
-## Introduction
-
-This lab applies concepts from the lessons to real AWS resources.
-
-## Your Task
-
-Complete hands-on exercises following lab instructions.
-
-**Time limit:** 45-60 minutes
-
-## Step-by-Step Instructions
-
-### Core Steps
-
-Follow detailed instructions in the lab guide (to be provided by instructor).
-
-Key activities include:
-- Analyzing current state
-- Implementing optimizations
-- Measuring results
-- Documenting findings
-
-## Submission
-
-Submit GitHub repository with:
-1. Lab report documenting your work
-2. Screenshots of results
-3. README with summary
-
-## Verification Checklist
-
-- [ ] Completed all required steps
-- [ ] Documented findings
-- [ ] Captured screenshots
-- [ ] Submitted to GitHub
-
-## Additional Resources
-
-Refer to Module 7 Day 3 lessons and AWS documentation.
-
-**Good luck! 🚀**
+## Screenshots
+- sns-subscription-confirmed.png
+- budget-list-console.png
+- budget-alerts-thresholds.png
+- budget-action-configuration.png
